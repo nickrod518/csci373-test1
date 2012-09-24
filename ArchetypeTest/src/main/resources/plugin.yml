@@ -1,8 +1,0 @@
-name: ArchetypeTest
-main: ArchetypeTest.MyPlugin
-version: 0.1
-
-commands:
-   command:
-      description: A Command
-      usage: /<command> 
