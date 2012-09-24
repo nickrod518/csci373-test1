@@ -1,7 +1,7 @@
 package ArchetypeTest;
 
 /*
-    This file is part of ArchetypeTest
+    This file is part of MyPlugin
 
     Foobar is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20,11 +20,11 @@ package ArchetypeTest;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ArchetypeTest extends JavaPlugin {
+public class MyPlugin extends JavaPlugin {
 
 	//ClassListeners
-	private final ArchetypeTestCommandExecutor commandExecutor = new ArchetypeTestCommandExecutor(this);
-	private final ArchetypeTestEventListener eventListener = new ArchetypeTestEventListener(this);
+	private final MyCommandExecutor commandExecutor = new MyCommandExecutor(this);
+	private final MyEventListener eventListener = new MyEventListener(this);
 	//ClassListeners
 
 	public void onDisable() {

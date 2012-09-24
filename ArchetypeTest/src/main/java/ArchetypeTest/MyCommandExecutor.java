@@ -1,7 +1,7 @@
 package ArchetypeTest;
 
 /*
-    This file is part of ArchetypeTest
+    This file is part of MyPlugin
 
     Foobar is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,17 +22,17 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class ArchetypeTestCommandExecutor implements CommandExecutor {
+public class MyCommandExecutor implements CommandExecutor {
 
-    private ArchetypeTest plugin;
+    private MyPlugin plugin;
 
-    public ArchetypeTestCommandExecutor(ArchetypeTest plugin) {
+    public MyCommandExecutor(MyPlugin plugin) {
         this.plugin = plugin;
     }
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        plugin.getLogger().info("onCommand Reached in ArchetypeTest");
+        plugin.getLogger().info("onCommand Reached in MyPlugin");
 
         if (command.getName().equalsIgnoreCase("command")) {
 	    plugin.getLogger().info("command used");
